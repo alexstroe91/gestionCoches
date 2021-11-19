@@ -36,6 +36,19 @@
         End With
     End Function
 
+    Public Function introducirCocheDiccionario(frm As frmAltas) As Boolean
 
+        Try
+            With frm
+                Dim coche As New coche(.txtMatricula.Text, .txtMarca.Text, .txtModelo.Text, .txtColor.Text, CInt(.txtPlazas.Text))
+                dic.Add(.txtMatricula.Text, coche)
+            End With
+            Return True
+        Catch ex As Exception
+            MessageBox.Show("--Error--: " & ex.Message)
+            Return False
+        End Try
+
+    End Function
 
 End Class

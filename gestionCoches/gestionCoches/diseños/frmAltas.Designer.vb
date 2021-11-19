@@ -24,6 +24,11 @@ Partial Class frmAltas
     Private Sub InitializeComponent()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtPlazas = New System.Windows.Forms.TextBox()
+        Me.txtColor = New System.Windows.Forms.TextBox()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
+        Me.txtMarca = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -33,21 +38,16 @@ Partial Class frmAltas
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnAñadir = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblPlazas = New System.Windows.Forms.Label()
-        Me.lblColor = New System.Windows.Forms.Label()
-        Me.lblModelo = New System.Windows.Forms.Label()
-        Me.lblMarca = New System.Windows.Forms.Label()
-        Me.lblMatricula = New System.Windows.Forms.Label()
-        Me.txtMarca = New System.Windows.Forms.TextBox()
-        Me.txtModelo = New System.Windows.Forms.TextBox()
-        Me.txtColor = New System.Windows.Forms.TextBox()
-        Me.txtPlazas = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lblPlazas = New System.Windows.Forms.Label()
+        Me.lblColor = New System.Windows.Forms.Label()
+        Me.lblModelo = New System.Windows.Forms.Label()
+        Me.lblMarca = New System.Windows.Forms.Label()
+        Me.lblMatricula = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -77,6 +77,48 @@ Partial Class frmAltas
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(423, 172)
         Me.Panel1.TabIndex = 53
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(256, 145)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(155, 16)
+        Me.Label11.TabIndex = 37
+        Me.Label11.Text = "* son las obligatorias"
+        '
+        'txtPlazas
+        '
+        Me.txtPlazas.Location = New System.Drawing.Point(100, 141)
+        Me.txtPlazas.MaxLength = 30
+        Me.txtPlazas.Name = "txtPlazas"
+        Me.txtPlazas.Size = New System.Drawing.Size(100, 20)
+        Me.txtPlazas.TabIndex = 36
+        '
+        'txtColor
+        '
+        Me.txtColor.Location = New System.Drawing.Point(101, 109)
+        Me.txtColor.MaxLength = 30
+        Me.txtColor.Name = "txtColor"
+        Me.txtColor.Size = New System.Drawing.Size(100, 20)
+        Me.txtColor.TabIndex = 35
+        '
+        'txtModelo
+        '
+        Me.txtModelo.Location = New System.Drawing.Point(100, 78)
+        Me.txtModelo.MaxLength = 30
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(100, 20)
+        Me.txtModelo.TabIndex = 34
+        '
+        'txtMarca
+        '
+        Me.txtMarca.Location = New System.Drawing.Point(100, 46)
+        Me.txtMarca.MaxLength = 30
+        Me.txtMarca.Name = "txtMarca"
+        Me.txtMarca.Size = New System.Drawing.Size(100, 20)
+        Me.txtMarca.TabIndex = 33
         '
         'Label1
         '
@@ -177,93 +219,11 @@ Partial Class frmAltas
         Me.Panel2.TabIndex = 57
         Me.Panel2.Visible = False
         '
-        'lblPlazas
-        '
-        Me.lblPlazas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblPlazas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlazas.Location = New System.Drawing.Point(209, 148)
-        Me.lblPlazas.Name = "lblPlazas"
-        Me.lblPlazas.Size = New System.Drawing.Size(120, 23)
-        Me.lblPlazas.TabIndex = 45
-        Me.lblPlazas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblColor
-        '
-        Me.lblColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColor.Location = New System.Drawing.Point(209, 108)
-        Me.lblColor.Name = "lblColor"
-        Me.lblColor.Size = New System.Drawing.Size(120, 23)
-        Me.lblColor.TabIndex = 44
-        Me.lblColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblModelo
-        '
-        Me.lblModelo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblModelo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModelo.Location = New System.Drawing.Point(209, 76)
-        Me.lblModelo.Name = "lblModelo"
-        Me.lblModelo.Size = New System.Drawing.Size(120, 23)
-        Me.lblModelo.TabIndex = 43
-        Me.lblModelo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblMarca
-        '
-        Me.lblMarca.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMarca.Location = New System.Drawing.Point(209, 44)
-        Me.lblMarca.Name = "lblMarca"
-        Me.lblMarca.Size = New System.Drawing.Size(120, 23)
-        Me.lblMarca.TabIndex = 42
-        Me.lblMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblMatricula
-        '
-        Me.lblMatricula.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMatricula.Location = New System.Drawing.Point(209, 5)
-        Me.lblMatricula.Name = "lblMatricula"
-        Me.lblMatricula.Size = New System.Drawing.Size(120, 23)
-        Me.lblMatricula.TabIndex = 41
-        Me.lblMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtMarca
-        '
-        Me.txtMarca.Location = New System.Drawing.Point(100, 46)
-        Me.txtMarca.MaxLength = 30
-        Me.txtMarca.Name = "txtMarca"
-        Me.txtMarca.Size = New System.Drawing.Size(100, 20)
-        Me.txtMarca.TabIndex = 33
-        '
-        'txtModelo
-        '
-        Me.txtModelo.Location = New System.Drawing.Point(100, 78)
-        Me.txtModelo.MaxLength = 30
-        Me.txtModelo.Name = "txtModelo"
-        Me.txtModelo.Size = New System.Drawing.Size(100, 20)
-        Me.txtModelo.TabIndex = 34
-        '
-        'txtColor
-        '
-        Me.txtColor.Location = New System.Drawing.Point(101, 109)
-        Me.txtColor.MaxLength = 30
-        Me.txtColor.Name = "txtColor"
-        Me.txtColor.Size = New System.Drawing.Size(100, 20)
-        Me.txtColor.TabIndex = 35
-        '
-        'txtPlazas
-        '
-        Me.txtPlazas.Location = New System.Drawing.Point(100, 141)
-        Me.txtPlazas.MaxLength = 30
-        Me.txtPlazas.Name = "txtPlazas"
-        Me.txtPlazas.Size = New System.Drawing.Size(100, 20)
-        Me.txtPlazas.TabIndex = 36
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(15, 12)
+        Me.Label6.Location = New System.Drawing.Point(17, 16)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 16)
         Me.Label6.TabIndex = 46
@@ -273,7 +233,7 @@ Partial Class frmAltas
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(20, 51)
+        Me.Label7.Location = New System.Drawing.Point(37, 52)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(51, 16)
         Me.Label7.TabIndex = 47
@@ -283,7 +243,7 @@ Partial Class frmAltas
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(20, 83)
+        Me.Label8.Location = New System.Drawing.Point(28, 87)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(60, 16)
         Me.Label8.TabIndex = 48
@@ -293,7 +253,7 @@ Partial Class frmAltas
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(23, 115)
+        Me.Label9.Location = New System.Drawing.Point(43, 119)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(45, 16)
         Me.Label9.TabIndex = 49
@@ -303,21 +263,61 @@ Partial Class frmAltas
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(20, 152)
+        Me.Label10.Location = New System.Drawing.Point(33, 159)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 16)
         Me.Label10.TabIndex = 50
         Me.Label10.Text = "Plazas"
         '
-        'Label11
+        'lblPlazas
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(256, 145)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(155, 16)
-        Me.Label11.TabIndex = 37
-        Me.Label11.Text = "* son las obligatorias"
+        Me.lblPlazas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblPlazas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlazas.Location = New System.Drawing.Point(211, 152)
+        Me.lblPlazas.Name = "lblPlazas"
+        Me.lblPlazas.Size = New System.Drawing.Size(120, 23)
+        Me.lblPlazas.TabIndex = 45
+        Me.lblPlazas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblColor
+        '
+        Me.lblColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblColor.Location = New System.Drawing.Point(211, 115)
+        Me.lblColor.Name = "lblColor"
+        Me.lblColor.Size = New System.Drawing.Size(120, 23)
+        Me.lblColor.TabIndex = 44
+        Me.lblColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModelo
+        '
+        Me.lblModelo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblModelo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModelo.Location = New System.Drawing.Point(211, 83)
+        Me.lblModelo.Name = "lblModelo"
+        Me.lblModelo.Size = New System.Drawing.Size(120, 23)
+        Me.lblModelo.TabIndex = 43
+        Me.lblModelo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMarca
+        '
+        Me.lblMarca.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMarca.Location = New System.Drawing.Point(211, 48)
+        Me.lblMarca.Name = "lblMarca"
+        Me.lblMarca.Size = New System.Drawing.Size(120, 23)
+        Me.lblMarca.TabIndex = 42
+        Me.lblMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMatricula
+        '
+        Me.lblMatricula.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMatricula.Location = New System.Drawing.Point(211, 12)
+        Me.lblMatricula.Name = "lblMatricula"
+        Me.lblMatricula.Size = New System.Drawing.Size(120, 23)
+        Me.lblMatricula.TabIndex = 41
+        Me.lblMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'frmAltas
         '
