@@ -48,6 +48,7 @@ Partial Class frmAltas
         Me.lblModelo = New System.Windows.Forms.Label()
         Me.lblMarca = New System.Windows.Forms.Label()
         Me.lblMatricula = New System.Windows.Forms.Label()
+        Me.lblAñadido = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -84,9 +85,9 @@ Partial Class frmAltas
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(256, 145)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(155, 16)
+        Me.Label11.Size = New System.Drawing.Size(160, 16)
         Me.Label11.TabIndex = 37
-        Me.Label11.Text = "* son las obligatorias"
+        Me.Label11.Text = "* campos obligatorios"
         '
         'txtPlazas
         '
@@ -183,7 +184,7 @@ Partial Class frmAltas
         '
         Me.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(216, 216)
+        Me.btnSalir.Location = New System.Drawing.Point(137, 225)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 56
@@ -193,7 +194,7 @@ Partial Class frmAltas
         'btnAñadir
         '
         Me.btnAñadir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAñadir.Location = New System.Drawing.Point(122, 216)
+        Me.btnAñadir.Location = New System.Drawing.Point(43, 225)
         Me.btnAñadir.Name = "btnAñadir"
         Me.btnAñadir.Size = New System.Drawing.Size(75, 23)
         Me.btnAñadir.TabIndex = 54
@@ -213,7 +214,7 @@ Partial Class frmAltas
         Me.Panel2.Controls.Add(Me.lblModelo)
         Me.Panel2.Controls.Add(Me.lblMarca)
         Me.Panel2.Controls.Add(Me.lblMatricula)
-        Me.Panel2.Location = New System.Drawing.Point(28, 278)
+        Me.Panel2.Location = New System.Drawing.Point(49, 278)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(349, 183)
         Me.Panel2.TabIndex = 57
@@ -319,11 +320,24 @@ Partial Class frmAltas
         Me.lblMatricula.TabIndex = 41
         Me.lblMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'lblAñadido
+        '
+        Me.lblAñadido.AutoSize = True
+        Me.lblAñadido.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAñadido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblAñadido.Location = New System.Drawing.Point(236, 197)
+        Me.lblAñadido.Name = "lblAñadido"
+        Me.lblAñadido.Size = New System.Drawing.Size(199, 16)
+        Me.lblAñadido.TabIndex = 38
+        Me.lblAñadido.Text = "Coche introducido con éxito"
+        Me.lblAñadido.Visible = False
+        '
         'frmAltas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(447, 473)
+        Me.Controls.Add(Me.lblAñadido)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnAñadir)
@@ -366,4 +380,5 @@ Partial Class frmAltas
     Friend WithEvents lblMarca As Label
     Friend WithEvents lblMatricula As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents lblAñadido As Label
 End Class

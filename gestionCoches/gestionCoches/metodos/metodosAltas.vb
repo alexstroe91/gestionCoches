@@ -1,4 +1,6 @@
-﻿Public Class metodosAltas
+﻿Imports System.IO
+
+Public Class metodosAltas
 
     Public Shared dic As New Dictionary(Of String, coche)
 
@@ -37,7 +39,7 @@
     End Function
 
     Public Function introducirCocheDiccionario(frm As frmAltas) As Boolean
-
+        'añado un nuevo elemento coche al diccionario y grabo esa linea en el txt
         Try
             With frm
                 Dim coche As New coche(.txtMatricula.Text, .txtMarca.Text, .txtModelo.Text, .txtColor.Text, CInt(.txtPlazas.Text))
@@ -50,5 +52,16 @@
         End Try
 
     End Function
+
+    Public Sub vaciarCampos(frm As frmAltas)
+        With frm
+            .txtMatricula.Text = ""
+            .txtMarca.Text = ""
+            .txtModelo.Text = ""
+            .txtColor.Text = ""
+            .txtPlazas.Text = ""
+        End With
+    End Sub
+
 
 End Class
