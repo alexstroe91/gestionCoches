@@ -22,7 +22,21 @@
             MessageBox.Show(ch.Matricula)
 
         Next
+
+        MessageBox.Show(CStr(dic.Count))
     End Sub
+
+    'comprobar si estan vacios los campos de matricula marca y modelo
+    Public Function comprobarVacios(frm As frmAltas) As Boolean
+        With frm
+            If .txtMatricula.Text Is "" Or .txtMarca.Text Is "" Or .txtModelo.Text Is "" Then
+                Return True
+            Else
+                Return False
+            End If
+        End With
+    End Function
+
 
 
 End Class

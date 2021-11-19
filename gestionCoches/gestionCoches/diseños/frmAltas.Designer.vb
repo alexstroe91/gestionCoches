@@ -31,8 +31,7 @@ Partial Class frmAltas
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtMatricula = New System.Windows.Forms.TextBox()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.btnAñadir = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblPlazas = New System.Windows.Forms.Label()
         Me.lblColor = New System.Windows.Forms.Label()
@@ -140,33 +139,22 @@ Partial Class frmAltas
         '
         Me.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(256, 216)
+        Me.btnSalir.Location = New System.Drawing.Point(216, 216)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 56
         Me.btnSalir.TabStop = False
         Me.btnSalir.Text = "Salir"
         '
-        'btnNuevo
+        'btnAñadir
         '
-        Me.btnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(162, 216)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
-        Me.btnNuevo.TabIndex = 55
-        Me.btnNuevo.TabStop = False
-        Me.btnNuevo.Text = "Nuevo"
-        '
-        'btnCalcular
-        '
-        Me.btnCalcular.Enabled = False
-        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalcular.Location = New System.Drawing.Point(81, 216)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
-        Me.btnCalcular.TabIndex = 54
-        Me.btnCalcular.TabStop = False
-        Me.btnCalcular.Text = "Calcular"
+        Me.btnAñadir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAñadir.Location = New System.Drawing.Point(122, 216)
+        Me.btnAñadir.Name = "btnAñadir"
+        Me.btnAñadir.Size = New System.Drawing.Size(75, 23)
+        Me.btnAñadir.TabIndex = 54
+        Me.btnAñadir.TabStop = False
+        Me.btnAñadir.Text = "AÑADIR"
         '
         'Panel2
         '
@@ -326,8 +314,7 @@ Partial Class frmAltas
         Me.ClientSize = New System.Drawing.Size(447, 473)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.btnNuevo)
-        Me.Controls.Add(Me.btnCalcular)
+        Me.Controls.Add(Me.btnAñadir)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "frmAltas"
@@ -354,8 +341,7 @@ Partial Class frmAltas
     Friend WithEvents txtModelo As TextBox
     Friend WithEvents txtMarca As TextBox
     Friend WithEvents btnSalir As Button
-    Friend WithEvents btnNuevo As Button
-    Friend WithEvents btnCalcular As Button
+    Friend WithEvents btnAñadir As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
