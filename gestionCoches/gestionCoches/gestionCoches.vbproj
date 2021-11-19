@@ -77,10 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="datos\coche.vb" />
-    <Compile Include="diseños\frmListado.Designer.vb">
-      <DependentUpon>frmListado.vb</DependentUpon>
+    <Compile Include="diseños\frmAltas.Designer.vb">
+      <DependentUpon>frmAltas.vb</DependentUpon>
     </Compile>
-    <Compile Include="diseños\frmListado.vb">
+    <Compile Include="diseños\frmAltas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="diseños\frmPrincipal.vb">
@@ -90,6 +90,7 @@
       <DependentUpon>frmPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="metodos\metodosAltas.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -107,8 +108,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="diseños\frmListado.resx">
-      <DependentUpon>frmListado.vb</DependentUpon>
+    <EmbeddedResource Include="diseños\frmAltas.resx">
+      <DependentUpon>frmAltas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="diseños\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
@@ -132,9 +133,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="metodos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
