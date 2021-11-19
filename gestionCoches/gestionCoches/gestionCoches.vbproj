@@ -76,21 +76,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datos\coche.vb" />
-    <Compile Include="diseños\frmAltas.Designer.vb">
+    <Compile Include="Datos\coche.vb" />
+    <Compile Include="Formularios\frmAltas.Designer.vb">
       <DependentUpon>frmAltas.vb</DependentUpon>
     </Compile>
-    <Compile Include="diseños\frmAltas.vb">
+    <Compile Include="Formularios\frmAltas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños\frmPrincipal.vb">
+    <Compile Include="Formularios\frmListado.Designer.vb">
+      <DependentUpon>frmListado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños\frmPrincipal.Designer.vb">
+    <Compile Include="Formularios\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="metodos\metodosAltas.vb" />
+    <Compile Include="Logica\metodosAltas.vb" />
+    <Compile Include="Logica\metodosListado.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,10 +115,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="diseños\frmAltas.resx">
+    <EmbeddedResource Include="Formularios\frmAltas.resx">
       <DependentUpon>frmAltas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños\frmPrincipal.resx">
+    <EmbeddedResource Include="Formularios\frmListado.resx">
+      <DependentUpon>frmListado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
