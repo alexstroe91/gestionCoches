@@ -22,7 +22,6 @@
             MessageBox.Show(ch.Matricula)
 
         Next
-
         MessageBox.Show(CStr(dic.Count))
     End Sub
 

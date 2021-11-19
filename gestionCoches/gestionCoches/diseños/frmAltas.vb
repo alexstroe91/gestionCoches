@@ -4,6 +4,8 @@
         If metodos.comprobarVacios(Me) Then
             MessageBox.Show("Tienes que rellenar los campos obligatorios.")
             txtMatricula.Focus()
+        Else
+            Dim 
         End If
     End Sub
 

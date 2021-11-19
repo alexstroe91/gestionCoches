@@ -47,6 +47,7 @@ Partial Class frmAltas
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -61,6 +62,7 @@ Partial Class frmAltas
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.txtPlazas)
         Me.Panel1.Controls.Add(Me.txtColor)
         Me.Panel1.Controls.Add(Me.txtModelo)
@@ -82,9 +84,9 @@ Partial Class frmAltas
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(13, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 16)
+        Me.Label1.Size = New System.Drawing.Size(77, 16)
         Me.Label1.TabIndex = 24
-        Me.Label1.Text = "Matricula"
+        Me.Label1.Text = "Matricula*"
         '
         'Label2
         '
@@ -92,9 +94,9 @@ Partial Class frmAltas
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(13, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 16)
+        Me.Label2.Size = New System.Drawing.Size(57, 16)
         Me.Label2.TabIndex = 26
-        Me.Label2.Text = "Marca"
+        Me.Label2.Text = "Marca*"
         '
         'Label3
         '
@@ -102,9 +104,9 @@ Partial Class frmAltas
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(13, 78)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 16)
+        Me.Label3.Size = New System.Drawing.Size(66, 16)
         Me.Label3.TabIndex = 28
-        Me.Label3.Text = "Modelo"
+        Me.Label3.Text = "Modelo*"
         '
         'Label4
         '
@@ -307,6 +309,16 @@ Partial Class frmAltas
         Me.Label10.TabIndex = 50
         Me.Label10.Text = "Plazas"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(256, 145)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(155, 16)
+        Me.Label11.TabIndex = 37
+        Me.Label11.Text = "* son las obligatorias"
+        '
         'frmAltas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -353,4 +365,5 @@ Partial Class frmAltas
     Friend WithEvents lblModelo As Label
     Friend WithEvents lblMarca As Label
     Friend WithEvents lblMatricula As Label
+    Friend WithEvents Label11 As Label
 End Class
