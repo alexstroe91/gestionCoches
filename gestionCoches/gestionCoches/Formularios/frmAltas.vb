@@ -15,6 +15,7 @@
     End Sub
 
     Private Sub txt_textChanged(sender As Object, e As EventArgs) Handles txtMatricula.TextChanged, txtMarca.TextChanged, txtModelo.TextChanged, txtColor.TextChanged, txtPlazas.TextChanged
+        'ocultamos el label si se empieza a escribir en algun text box
         lblAñadido.Visible = False
 
     End Sub
