@@ -44,6 +44,8 @@ Public Class metodosAltas
             With frm
                 Dim coche As New coche(.txtMatricula.Text, .txtMarca.Text, .txtModelo.Text, .txtColor.Text, CInt(.txtPlazas.Text))
                 dic.Add(.txtMatricula.Text, coche)
+                Dim linea As String = .txtMatricula.Text & ";" & .txtMarca.Text & ";" & .txtModelo.Text & ";" & .txtColor.Text & ";" & .txtPlazas.Text
+                grabarEnFichero(linea)
             End With
             Return True
         Catch ex As Exception
@@ -63,5 +65,11 @@ Public Class metodosAltas
         End With
     End Sub
 
+    Public Sub grabarEnFichero(linea As String)
+        'escribimos en el archivo sin sobreescribir los datos ya almacenados con la opcion True
+        Dim sw As New StreamWriter(".\DatosAlmacenadosCoches\coches.txt", True)
+        sw.WriteLine(linea)
+        sw.Close()
+    End Sub
 
 End Class
