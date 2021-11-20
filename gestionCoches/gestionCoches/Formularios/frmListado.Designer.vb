@@ -23,11 +23,11 @@ Partial Class frmListado
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvListadoCoches = New System.Windows.Forms.DataGridView()
-        Me.Matricula = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Color = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Plazas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Color = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Matricula = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoCoches, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,23 +43,11 @@ Partial Class frmListado
         Me.dgvListadoCoches.Size = New System.Drawing.Size(555, 286)
         Me.dgvListadoCoches.TabIndex = 0
         '
-        'Matricula
+        'Plazas
         '
-        Me.Matricula.HeaderText = "Matricula"
-        Me.Matricula.Name = "Matricula"
-        Me.Matricula.ReadOnly = True
-        '
-        'Marca
-        '
-        Me.Marca.HeaderText = "Marca"
-        Me.Marca.Name = "Marca"
-        Me.Marca.ReadOnly = True
-        '
-        'Modelo
-        '
-        Me.Modelo.HeaderText = "Modelo"
-        Me.Modelo.Name = "Modelo"
-        Me.Modelo.ReadOnly = True
+        Me.Plazas.HeaderText = "Plazas"
+        Me.Plazas.Name = "Plazas"
+        Me.Plazas.ReadOnly = True
         '
         'Color
         '
@@ -67,11 +55,23 @@ Partial Class frmListado
         Me.Color.Name = "Color"
         Me.Color.ReadOnly = True
         '
-        'Plazas
+        'Modelo
         '
-        Me.Plazas.HeaderText = "Plazas"
-        Me.Plazas.Name = "Plazas"
-        Me.Plazas.ReadOnly = True
+        Me.Modelo.HeaderText = "Modelo"
+        Me.Modelo.Name = "Modelo"
+        Me.Modelo.ReadOnly = True
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.Name = "Marca"
+        Me.Marca.ReadOnly = True
+        '
+        'Matricula
+        '
+        Me.Matricula.HeaderText = "Matricula"
+        Me.Matricula.Name = "Matricula"
+        Me.Matricula.ReadOnly = True
         '
         'frmListado
         '
