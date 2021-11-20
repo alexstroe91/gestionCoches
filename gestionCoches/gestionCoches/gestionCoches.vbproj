@@ -98,6 +98,7 @@
     </Compile>
     <Compile Include="Logica\metodosAltas.vb" />
     <Compile Include="Logica\metodosListado.vb" />
+    <Compile Include="Logica\metodosPrincipal.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

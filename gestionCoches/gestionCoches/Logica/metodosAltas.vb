@@ -42,9 +42,17 @@ Public Class metodosAltas
         'añado un nuevo elemento coche al diccionario y grabo esa linea en el txt
         Try
             With frm
-                Dim coche As New coche(.txtMatricula.Text, .txtMarca.Text, .txtModelo.Text, .txtColor.Text, CInt(.txtPlazas.Text))
+
+                Dim numeroPlazas As Integer
+                If .txtPlazas.Text Is Nothing Then
+                    numeroPlazas = 0
+                Else
+                    numeroPlazas = CInt(.txtPlazas.Text)
+                End If
+
+                Dim coche As New coche(.txtMatricula.Text, .txtMarca.Text, .txtModelo.Text, .txtColor.Text, numeroPlazas)
                 dic.Add(.txtMatricula.Text, coche)
-                Dim linea As String = .txtMatricula.Text & ";" & .txtMarca.Text & ";" & .txtModelo.Text & ";" & .txtColor.Text & ";" & .txtPlazas.Text
+                Dim linea As String = .txtMatricula.Text & ";" & .txtMarca.Text & ";" & .txtModelo.Text & ";" & .txtColor.Text & ";" & CStr(numeroPlazas)
                 grabarEnFichero(linea)
             End With
             Return True
