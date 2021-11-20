@@ -44,7 +44,7 @@ Public Class metodosAltas
             With frm
 
                 Dim numeroPlazas As Integer
-                If .txtPlazas.Text Is Nothing Then
+                If .txtPlazas.Text Is "" Then
                     numeroPlazas = 0
                 Else
                     numeroPlazas = CInt(.txtPlazas.Text)
