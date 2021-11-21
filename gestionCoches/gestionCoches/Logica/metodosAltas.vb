@@ -75,9 +75,14 @@ Public Class metodosAltas
 
     Public Sub grabarEnFichero(linea As String)
         'escribimos en el archivo sin sobreescribir los datos ya almacenados con la opcion True
-        Dim sw As New StreamWriter(".\DatosAlmacenadosCoches\coches.txt", True)
-        sw.WriteLine(linea)
-        sw.Close()
+        Try
+            Dim sw As New StreamWriter(".\DatosAlmacenadosCoches\coches.txt", True)
+            sw.WriteLine(linea)
+            sw.Close()
+        Catch ex As Exception
+            MessageBox.Show("--Error--: " & ex.Message)
+        End Try
+
     End Sub
 
 End Class

@@ -1,4 +1,6 @@
-﻿Public Class frmPrincipal
+﻿
+
+Public Class frmPrincipal
     Dim metodos As New metodosPrincipal
 
     Private Sub btnAltas_Click(sender As Object, e As EventArgs) Handles btnAltas.Click
@@ -14,5 +16,6 @@
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim metodosAltas As New metodosAltas
         metodos.cargarDiccionario(metodosAltas.dic)
+
     End Sub
 End Class
